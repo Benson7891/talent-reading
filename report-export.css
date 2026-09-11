@@ -13,8 +13,8 @@
   .report-export-head{border-color:#b99a63!important;margin-bottom:18px}.save-pdf-button{display:none!important}
   #result p,#result .radar-text,#result .algorithm-note{color:#b9c8c8!important}#result h3,#result h4,#result h5,#result strong{color:#edf4f2!important}#result small{color:#42b9ae!important}
   .report-chips span,.talent-detail-score,.talent-detail-list span{color:#d4ad70!important;border-color:#8c7048!important}.score-track{background:#243e4a!important}
-  .report-cards,.report-cards article,.talent-detail,.talent-detail-head,.talent-detail-card,.product-match,.culture-lenses article,.questionnaire-summary{border-color:#38515c!important}
-  .report-top,.culture-lenses,.questionnaire-summary,.score-bars,.report-cards,.talent-detail,.product-match,.insight-path{break-inside:avoid}.product-match a,.culture-lenses a{display:none!important}
+  .report-cards,.report-cards article,.talent-detail,.talent-detail-head,.talent-detail-card,.product-match,.culture-lenses article{border-color:#38515c!important}
+  .report-top,.culture-lenses,.score-bars,.report-cards,.talent-detail,.product-match,.insight-path{break-inside:avoid}.product-match a,.culture-lenses a{display:none!important}
   .report-top{grid-template-columns:1fr 300px!important;gap:24px!important}.report-top h3{font-size:42px!important}.radar-wrap{max-width:300px!important}.score-bars{grid-template-columns:repeat(5,1fr)!important;gap:6px!important}.score-item{padding:8px!important}
   .talent-detail-grid{grid-template-columns:repeat(2,1fr)!important}.talent-detail-list{grid-template-columns:repeat(4,1fr)!important}
 }

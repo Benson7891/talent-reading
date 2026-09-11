@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="naming.css">
   <link rel="stylesheet" href="typography-tuning.css">
   <link rel="stylesheet" href="wuxing.css">
-  <link rel="stylesheet" href="questionnaire.css">
   <link rel="stylesheet" href="talent-detail.css">
   <link rel="stylesheet" href="report-export.css">
   <script type="application/ld+json">
@@ -110,7 +109,6 @@
       <form id="birth-form">
         <label for="birth" data-i18n="birthLabel">出生日期</label>
         <div class="form-row"><input id="birth" type="date" value="1990-06-15" required><select id="focus"><option value="talent">天赋与自我</option><option value="career">事业与转型</option><option value="relationship">关系与合作</option><option value="balance">身心平衡</option></select><button class="button primary" type="submit" data-i18n="generate">启动九数轮 →</button></div>
-        <fieldset id="talent-questionnaire" class="talent-questionnaire" aria-labelledby="questionnaire-title"></fieldset>
         <small data-i18n="privacy">日期仅在本页计算，不会上传或保存。</small>
       </form>
       <div class="oracle-stage" id="oracle-stage">
@@ -141,7 +139,6 @@
           <article><small id="chinese-lens-label">中国历法视角</small><h4 id="chinese-lens-title"></h4><p id="chinese-lens-copy"></p><a href="https://www.hko.gov.hk/tc/gts/time/stemsandbranches.htm" target="_blank" rel="noreferrer">香港天文台历法资料 ↗</a></article>
           <article><small id="maya-lens-label">玛雅历法视角</small><h4 id="maya-lens-title"></h4><p id="maya-lens-copy"></p><a href="https://maya.nmai.si.edu/calendar/calendar-system" target="_blank" rel="noreferrer">Smithsonian Living Maya Time ↗</a></article>
         </div>
-        <div id="questionnaire-summary" class="questionnaire-summary"></div>
         <div class="score-bars" id="score-bars"></div>
         <div class="report-cards">
           <article><small id="strength-label">核心优势</small><h4 id="result-strength"></h4><p id="strength-copy"></p></article>
@@ -182,7 +179,6 @@
   <footer class="shell"><div class="brand"><span class="brand-mark">✦</span><span data-i18n="brand">天赋图鉴 跨文化天赋与东方战略</span></div><p data-i18n="footer">文化是理解自己的另一种语言。</p><small>© 2026 · Cultural exploration, not prediction.</small></footer>
   <aside id="cart-panel" class="cart-panel" aria-hidden="true"><div class="cart-title"><h2 data-i18n="yourCart">你的购物袋</h2><button id="cart-close">×</button></div><div id="cart-items"></div><p id="cart-empty" data-i18n="cartEmpty">购物袋还是空的。</p><div class="cart-total"><span data-i18n="subtotal">商品小计</span><strong id="cart-total">¥0</strong></div><button class="button primary checkout" data-i18n="inquiry">提交购买意向</button><small data-i18n="prototypeNote">当前为商品原型，不会产生真实订单或付款。</small></aside><div id="cart-shade" class="cart-shade"></div>
   <script src="app.js"></script>
-  <script src="questionnaire.js"></script>
   <script src="talent-detail.js"></script>
   <script src="report-export.js"></script>
   <script src="talent-engine.js"></script>
