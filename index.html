@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="naming.css">
   <link rel="stylesheet" href="typography-tuning.css">
   <link rel="stylesheet" href="wuxing.css">
+  <link rel="stylesheet" href="questionnaire.css">
+  <link rel="stylesheet" href="talent-detail.css">
+  <link rel="stylesheet" href="report-export.css">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -107,6 +110,7 @@
       <form id="birth-form">
         <label for="birth" data-i18n="birthLabel">出生日期</label>
         <div class="form-row"><input id="birth" type="date" value="1990-06-15" required><select id="focus"><option value="talent">天赋与自我</option><option value="career">事业与转型</option><option value="relationship">关系与合作</option><option value="balance">身心平衡</option></select><button class="button primary" type="submit" data-i18n="generate">启动九数轮 →</button></div>
+        <fieldset id="talent-questionnaire" class="talent-questionnaire" aria-labelledby="questionnaire-title"></fieldset>
         <small data-i18n="privacy">日期仅在本页计算，不会上传或保存。</small>
       </form>
       <div class="oracle-stage" id="oracle-stage">
@@ -124,6 +128,10 @@
         <div class="orbit-spark spark-one"></div><div class="orbit-spark spark-two"></div><div class="orbit-spark spark-three"></div>
       </div>
       <div id="result" class="talent-report" hidden>
+        <div class="report-export-head">
+          <div><small id="export-report-label">个人天赋报告</small><span id="export-report-date"></span></div>
+          <button id="save-pdf-button" class="save-pdf-button" type="button">保存为 PDF</button>
+        </div>
         <div class="report-top">
           <div><small id="report-kicker">你的核心文化原型</small><h3 id="result-title">构建者</h3><p id="result-copy"></p><div class="report-chips"><span id="result-element"></span><span id="result-secondary"></span><span id="result-number"></span></div></div>
           <div class="radar-wrap"><svg id="talent-radar" viewBox="0 0 320 300" role="img" aria-label="Talent radar chart"><g id="radar-grid"></g><polygon id="radar-shape" points="160,50 270,130 228,255 92,255 50,130"></polygon><g id="radar-labels"></g></svg></div>
@@ -133,12 +141,14 @@
           <article><small id="chinese-lens-label">中国历法视角</small><h4 id="chinese-lens-title"></h4><p id="chinese-lens-copy"></p><a href="https://www.hko.gov.hk/tc/gts/time/stemsandbranches.htm" target="_blank" rel="noreferrer">香港天文台历法资料 ↗</a></article>
           <article><small id="maya-lens-label">玛雅历法视角</small><h4 id="maya-lens-title"></h4><p id="maya-lens-copy"></p><a href="https://maya.nmai.si.edu/calendar/calendar-system" target="_blank" rel="noreferrer">Smithsonian Living Maya Time ↗</a></article>
         </div>
+        <div id="questionnaire-summary" class="questionnaire-summary"></div>
         <div class="score-bars" id="score-bars"></div>
         <div class="report-cards">
           <article><small id="strength-label">核心优势</small><h4 id="result-strength"></h4><p id="strength-copy"></p></article>
           <article><small id="balance-label">平衡提醒</small><h4 id="balance-title"></h4><p id="balance-copy"></p></article>
           <article><small id="strategy-label">东方战略提示</small><h4 id="strategy-title"></h4><p id="strategy-copy"></p></article>
         </div>
+        <div id="talent-detail" class="talent-detail"></div>
         <div class="product-match"><div><small id="match-label">与你的故事相匹配</small><h4 id="match-title"></h4><p id="match-copy"></p></div><a id="match-link" href="#shop">查看文化产品 →</a></div>
         <div class="insight-path"><div class="path-head"><small id="path-label">中西结合 · 助己助人</small><h4 id="path-title">先知己，再知彼</h4><p id="path-copy"></p></div><div class="path-steps"><article><b>01</b><small id="step-calc-label">算</small><h5 id="step-calc-title"></h5><p id="step-calc-copy"></p></article><article><b>02</b><small id="step-see-label">看</small><h5 id="step-see-title"></h5><p id="step-see-copy"></p></article><article><b>03</b><small id="step-ask-label">问</small><h5 id="step-ask-title"></h5><p id="step-ask-copy"></p></article><article><b>04</b><small id="step-observe-label">观</small><h5 id="step-observe-title"></h5><p id="step-observe-copy"></p></article></div></div>
         <p class="algorithm-note" id="algorithm-note">结果用于文化探索和自我反思，不自动推断疾病、创伤、财富或命运。</p>
@@ -172,6 +182,9 @@
   <footer class="shell"><div class="brand"><span class="brand-mark">✦</span><span data-i18n="brand">天赋图鉴 跨文化天赋与东方战略</span></div><p data-i18n="footer">文化是理解自己的另一种语言。</p><small>© 2026 · Cultural exploration, not prediction.</small></footer>
   <aside id="cart-panel" class="cart-panel" aria-hidden="true"><div class="cart-title"><h2 data-i18n="yourCart">你的购物袋</h2><button id="cart-close">×</button></div><div id="cart-items"></div><p id="cart-empty" data-i18n="cartEmpty">购物袋还是空的。</p><div class="cart-total"><span data-i18n="subtotal">商品小计</span><strong id="cart-total">¥0</strong></div><button class="button primary checkout" data-i18n="inquiry">提交购买意向</button><small data-i18n="prototypeNote">当前为商品原型，不会产生真实订单或付款。</small></aside><div id="cart-shade" class="cart-shade"></div>
   <script src="app.js"></script>
+  <script src="questionnaire.js"></script>
+  <script src="talent-detail.js"></script>
+  <script src="report-export.js"></script>
   <script src="talent-engine.js"></script>
   <script src="naming.js"></script>
   <script src="layout.js"></script>
