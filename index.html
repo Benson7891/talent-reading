@@ -3,114 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>天赋图鉴 跨文化天赋与东方战略</title>
-  <meta name="description" content="面向全球个人与企业家的跨文化天赋分析、外国人中文命名及东方战略咨询，融合易经、五行、孙子兵法、玛雅历法与多文化人格系统。">
+  <title>九数天赋解读｜天赋图鉴</title>
+  <meta name="description" content="填写出生日期，转动九数轮，获取你的九数天赋解读与个人天赋说明书。">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="shop.css">
   <link rel="stylesheet" href="talent-report.css">
   <link rel="stylesheet" href="phase-two.css">
   <link rel="stylesheet" href="mystic-wheel.css">
   <link rel="stylesheet" href="wheel-tuning.css">
-  <link rel="stylesheet" href="naming.css">
   <link rel="stylesheet" href="typography-tuning.css">
-  <link rel="stylesheet" href="wuxing.css">
   <link rel="stylesheet" href="talent-detail.css">
-  <link rel="stylesheet" href="report-export.css">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"ProfessionalService","name":"天赋图鉴 跨文化天赋与东方战略","description":"跨文化天赋分析、外国人中文命名与东方战略咨询","availableLanguage":["zh-CN","en","es"]},
-      {"@type":"FAQPage","mainEntity":[
-        {"@type":"Question","name":"外国人如何获得合适的中文名字？","acceptedAnswer":{"@type":"Answer","text":"结合原名发音、中文语义、个人特质、使用场景及传统五行文化，筛选自然、易读且无不良谐音的中文名字。"}},
-        {"@type":"Question","name":"跨文化天赋图谱是什么？","acceptedAnswer":{"@type":"Answer","text":"它是一种文化探索与自我发展工具，参考易经五行、玛雅历法及其他文化模型，帮助使用者从多个视角理解优势、节奏与合作方式。"}}
-      ]}
-    ]
-  }
-  </script>
+  <link rel="stylesheet" href="button-effects.css">
+  <link rel="stylesheet" href="hook.css">
 </head>
 <body>
-  <header class="nav shell">
-    <a class="brand" href="#top"><span class="brand-mark">✦</span><span data-i18n="brand">天赋图鉴 跨文化天赋与东方战略</span></a>
-    <nav>
-      <a href="#systems" data-i18n="navSystems">文化系统</a>
-      <a href="#services" data-i18n="navServices">服务</a>
-      <a href="#naming" id="nav-naming">中文取名</a>
-      <a href="#shop" data-i18n="navShop">文化商店</a>
-      <a href="#faq" data-i18n="navFaq">常见问题</a>
-    </nav>
-    <div class="langs" aria-label="Language">
-      <button class="active" data-lang="zh">中</button><button data-lang="en">EN</button><button data-lang="es">ES</button>
-    </div>
+  <header class="nav shell hook-nav">
+    <a class="brand" href="#top"><span class="brand-mark">✦</span><span>天赋图鉴</span></a>
+    <a class="hook-nav-link" href="#reading">开始解读</a>
   </header>
 
   <main id="top">
-    <section class="hero shell">
-      <div class="hero-copy">
-        <p class="eyebrow" data-i18n="eyebrow">东方智慧 × 多文化</p>
-        <h1 data-i18n="heroTitle">发现优势，并持续放大</h1>
-        <p class="lead" data-i18n="heroLead">融合易经、五行、孙子兵法与玛雅等文化体系，为全球个人与企业家提供跨文化自我探索、中文命名和战略思维服务。</p>
-        <div class="actions">
-          <a class="button primary" href="#services" data-i18n="explore">探索服务</a>
-          <a class="button ghost" href="#reading" data-i18n="tryReading">体验天赋图谱</a>
-        </div>
+    <section id="reading" class="reading shell hook-reading">
+      <div class="hook-intro">
+        <p class="eyebrow">九数天赋探索</p>
+        <h1>你的出生日期<br>藏着怎样的天赋？</h1>
+        <p>输入出生日期，转动九数轮，查看你的天赋模式与个人天赋说明书。</p>
       </div>
-      <div class="orbit wuxing-compass" aria-hidden="true">
-        <div class="wuxing-stars"></div>
-        <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
-        <div class="bagua-wheel"><span>☰</span><span>☱</span><span>☲</span><span>☳</span><span>☴</span><span>☵</span><span>☶</span><span>☷</span></div>
-        <svg class="wuxing-paths" viewBox="0 0 100 100" aria-hidden="true">
-          <defs><marker id="wuxing-arrow" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#d9aa55"></path></marker></defs>
-          <g class="sheng-cycle" marker-end="url(#wuxing-arrow)"><path d="M9 38 Q25 15 47 10"></path><path d="M54 10 Q77 17 91 38"></path><path d="M93 44 Q92 70 79 89"></path><path d="M72 93 Q50 99 31 93"></path><path d="M24 89 Q8 70 7 44"></path></g>
-          <g class="ke-cycle"><path d="M8 40 L91 40 L29 91 L50 10 L77 91 Z"></path></g>
-        </svg>
-        <div class="core"><i>☯</i><b>易</b><small id="wuxing-subtitle">五行</small></div>
-        <span class="node n1" data-element="fire">火</span><span class="node n2" data-element="earth">土</span><span class="node n3" data-element="gold">金</span><span class="node n4" data-element="water">水</span><span class="node n5" data-element="wood">木</span>
-      </div>
-    </section>
 
-    <section id="systems" class="section shell">
-      <p class="eyebrow" data-i18n="systemsEyebrow">多文化参照系</p>
-      <h2 data-i18n="systemsTitle">不是用一个答案定义你，<br>而是从多种文化照见你。</h2>
-      <div class="system-grid">
-        <article><b>01</b><h3 data-i18n="sys1">易经与五行</h3><p data-i18n="sys1p">观察变化、平衡、关系与行动节奏。</p></article>
-        <article><b>02</b><h3 data-i18n="sys2">孙子兵法</h3><p data-i18n="sys2p">理解优势、环境、资源配置与合作策略。</p></article>
-        <article><b>03</b><h3 data-i18n="sys3">玛雅文化</h3><p data-i18n="sys3p">借时间符号探索个人节奏与生命主题。</p></article>
-        <article><b>04</b><h3 data-i18n="sys4">多文化模型</h3><p data-i18n="sys4p">纳入生命数字及其他国家的人格与象征体系。</p></article>
-      </div>
-    </section>
-
-    <section id="services" class="section shell">
-      <p class="eyebrow" data-i18n="serviceEyebrow">三项核心服务</p>
-      <div class="service-list">
-        <article class="service"><span>01</span><div><h2 data-i18n="s1">跨文化天赋图谱</h2><p data-i18n="s1p">从不同文化模型交叉理解核心优势、沟通方式、职业倾向、关系模式与成长方向。</p></div><em>Talent Atlas</em></article>
-        <article class="service"><span>02</span><div><h2 data-i18n="s2">外国人中文命名</h2><p data-i18n="s2p">兼顾原名发音、中文美感、五行文化、职业形象及实际使用场景，提供三语命名报告。</p></div><em>Chinese Naming</em></article>
-        <article class="service"><span>03</span><div><h2 data-i18n="s3">东方战略咨询</h2><p data-i18n="s3p">以孙子兵法和东方关系思维，辅助企业家判断形势、配置资源并改善跨文化合作。</p></div><em>Eastern Strategy</em></article>
-      </div>
-    </section>
-
-    <section id="shop" class="section shell shop">
-      <div class="shop-head"><div><p class="eyebrow" data-i18n="shopEyebrow">把你的故事带在身边</p><h2 data-i18n="shopTitle">与天赋原型相匹配的<br>中国风手珠与挂件</h2></div><button id="cart-button" class="cart-button"><span data-i18n="cart">购物袋</span> <b id="cart-count">0</b></button></div>
-      <p class="shop-intro" data-i18n="shopIntro">每件作品都从一种性格力量出发，以中国传统材质、颜色和象征语言讲述它的故事。依据自己的天赋图谱选择，也可以作为有文化含义的礼物。</p>
-      <div class="products">
-        <article class="product"><div class="product-image product-one"><span data-i18n="p1tag">开拓者 · 木</span></div><div class="product-body"><p class="product-kind" data-i18n="bracelet">文化手珠</p><h3 data-i18n="p1">青衡 · 方向手珠</h3><p data-i18n="p1story">青玉象征生长，沉香木代表沉静的根，罗盘提醒佩戴者：方向是在行动中找到的。</p><ul><li data-i18n="p1mat">青玉、沉香木、黄铜罗盘挂件</li><li data-i18n="p1fit">适合：开拓、转型、远行与新事业</li></ul><div class="buy"><strong>¥699</strong><button data-add="青衡 · 方向手珠" data-price="699" data-i18n="add">加入购物袋</button></div></div></article>
-        <article class="product"><div class="product-image product-two"><span data-i18n="p2tag">表达者 · 火</span></div><div class="product-body"><p class="product-kind" data-i18n="bracelet">文化手珠</p><h3 data-i18n="p2">赤曜 · 行动力手珠</h3><p data-i18n="p2story">红玛瑙代表热忱，虎眼石象征清醒的勇气，火纹讲述把灵感变成行动的力量。</p><ul><li data-i18n="p2mat">红玛瑙、虎眼石、黄铜火纹挂件</li><li data-i18n="p2fit">适合：表达、演讲、创业与重要挑战</li></ul><div class="buy"><strong>¥759</strong><button data-add="赤曜 · 行动力手珠" data-price="759" data-i18n="add">加入购物袋</button></div></div></article>
-        <article class="product"><div class="product-image product-three"><span data-i18n="p3tag">洞察者 · 水</span></div><div class="product-body"><p class="product-kind" data-i18n="pendant">文化挂件</p><h3 data-i18n="p3">观澜 · 山水玉佩</h3><p data-i18n="p3story">山代表定力，水代表智慧。圆形玉佩提醒佩戴者在变化中观察全局，清晰判断。</p><ul><li data-i18n="p3mat">白玉色石材、山水浅雕、深青丝绳</li><li data-i18n="p3fit">适合：思考、谈判、决策与内在平衡</li></ul><div class="buy"><strong>¥899</strong><button data-add="观澜 · 山水玉佩" data-price="899" data-i18n="add">加入购物袋</button></div></div></article>
-      </div>
-      <p class="material-note" data-i18n="materialNote">原型展示：正式销售前应确认材质鉴定、尺寸、库存、物流、退换货政策及产品安全说明。</p>
-    </section>
-
-    <section id="reading" class="reading shell">
-      <div>
-        <p class="eyebrow" data-i18n="demoEyebrow">文化探索体验</p>
-        <h2 data-i18n="demoTitle">生成你的示例天赋坐标</h2>
-        <p data-i18n="demoText">从“知己”开始：输入生日与当前关注，获得三层文化坐标和一份自我观察行动图。</p>
-      </div>
-      <form id="birth-form">
-        <label for="birth" data-i18n="birthLabel">出生日期</label>
-        <div class="form-row"><input id="birth" type="date" value="1990-06-15" required><select id="focus"><option value="talent">天赋与自我</option><option value="career">事业与转型</option><option value="relationship">关系与合作</option><option value="balance">身心平衡</option></select><button class="button primary" type="submit" data-i18n="generate">启动九数轮 →</button></div>
-        <small data-i18n="privacy">日期仅在本页计算，不会上传或保存。</small>
+      <form id="birth-form" class="hook-form">
+        <label for="birth">出生日期</label>
+        <div class="form-row"><input id="birth" type="date" required><button class="button primary" type="submit" data-i18n="generate">启动九数轮 →</button></div>
+        <select id="focus" hidden><option value="talent" selected>天赋与自我</option></select>
+        <small>日期仅在本页计算，不会上传或保存。</small>
       </form>
+
       <div class="oracle-stage" id="oracle-stage">
         <div class="oracle-stars" aria-hidden="true"></div>
         <div class="oracle-pointer" aria-hidden="true"><i></i></div>
@@ -125,19 +50,11 @@
         <button class="oracle-core" id="wheel-trigger" type="submit" form="birth-form"><small id="wheel-system-label">九数玄轮</small><strong id="wheel-action">点击转动</strong><span id="wheel-status">等待生日坐标</span></button>
         <div class="orbit-spark spark-one"></div><div class="orbit-spark spark-two"></div><div class="orbit-spark spark-three"></div>
       </div>
+
       <div id="result" class="talent-report" hidden>
-        <div class="report-export-head">
-          <div><small id="export-report-label">个人天赋报告</small><span id="export-report-date"></span></div>
-          <button id="save-pdf-button" class="save-pdf-button" type="button">保存为 PDF</button>
-        </div>
         <div class="report-top">
-          <div><small id="report-kicker">你的核心文化原型</small><h3 id="result-title">构建者</h3><p id="result-copy"></p><div class="report-chips"><span id="result-element"></span><span id="result-secondary"></span><span id="result-number"></span></div></div>
-          <div class="radar-wrap"><svg id="talent-radar" viewBox="0 0 320 300" role="img" aria-label="Talent radar chart"><g id="radar-grid"></g><polygon id="radar-shape" points="160,50 270,130 228,255 92,255 50,130"></polygon><g id="radar-labels"></g></svg></div>
-        </div>
-        <div class="culture-lenses">
-          <article><small id="original-lens-label">九数主系统</small><h4 id="original-lens-title"></h4><p id="original-lens-copy"></p><span>Jiushu system · Primary</span></article>
-          <article><small id="chinese-lens-label">中国历法视角</small><h4 id="chinese-lens-title"></h4><p id="chinese-lens-copy"></p><a href="https://www.hko.gov.hk/tc/gts/time/stemsandbranches.htm" target="_blank" rel="noreferrer">香港天文台历法资料 ↗</a></article>
-          <article><small id="maya-lens-label">玛雅历法视角</small><h4 id="maya-lens-title"></h4><p id="maya-lens-copy"></p><a href="https://maya.nmai.si.edu/calendar/calendar-system" target="_blank" rel="noreferrer">Smithsonian Living Maya Time ↗</a></article>
+          <div><small id="report-kicker">九数主系统</small><h3 id="result-title"></h3><p id="result-copy"></p><div class="report-chips"><span id="result-element"></span><span id="result-secondary"></span><span id="result-number"></span></div></div>
+          <div class="radar-wrap"><svg id="talent-radar" viewBox="0 0 320 300" role="img" aria-label="天赋雷达图"><g id="radar-grid"></g><polygon id="radar-shape" points="160,50 270,130 228,255 92,255 50,130"></polygon><g id="radar-labels"></g></svg></div>
         </div>
         <div class="score-bars" id="score-bars"></div>
         <div class="report-cards">
@@ -146,43 +63,29 @@
           <article><small id="strategy-label">东方战略提示</small><h4 id="strategy-title"></h4><p id="strategy-copy"></p></article>
         </div>
         <div id="talent-detail" class="talent-detail"></div>
-        <div class="product-match"><div><small id="match-label">与你的故事相匹配</small><h4 id="match-title"></h4><p id="match-copy"></p></div><a id="match-link" href="#shop">查看文化产品 →</a></div>
-        <div class="insight-path"><div class="path-head"><small id="path-label">中西结合 · 助己助人</small><h4 id="path-title">先知己，再知彼</h4><p id="path-copy"></p></div><div class="path-steps"><article><b>01</b><small id="step-calc-label">算</small><h5 id="step-calc-title"></h5><p id="step-calc-copy"></p></article><article><b>02</b><small id="step-see-label">看</small><h5 id="step-see-title"></h5><p id="step-see-copy"></p></article><article><b>03</b><small id="step-ask-label">问</small><h5 id="step-ask-title"></h5><p id="step-ask-copy"></p></article><article><b>04</b><small id="step-observe-label">观</small><h5 id="step-observe-title"></h5><p id="step-observe-copy"></p></article></div></div>
-        <p class="algorithm-note" id="algorithm-note">结果用于文化探索和自我反思，不自动推断疾病、创伤、财富或命运。</p>
+        <p class="algorithm-note" id="algorithm-note"></p>
       </div>
-    </section>
 
-    <section id="naming" class="section shell naming-studio">
-      <div class="naming-intro"><p class="eyebrow" id="naming-eyebrow">外国人中文取名</p><h2 id="naming-heading">让名字既能被叫出来，<br>也能讲述你的中国故事。</h2><p id="naming-lead">结合原名发音、生日九数、中国农历年干五行与个人愿景，生成三个中文名字初选，并用《孙子兵法》解释名字对应的行动战略。</p></div>
-      <form id="naming-form" class="naming-form">
-        <label><span id="original-name-label">原文姓名</span><input id="original-name" type="text" value="Explorer Leo" autocomplete="name" required></label>
-        <label><span id="naming-birth-label">出生日期</span><input id="naming-birth" type="date" value="1990-06-15" required></label>
-        <label><span id="intent-label">希望名字表达</span><select id="naming-intent"><option value="leadership">领导与开创</option><option value="harmony">合作与和谐</option><option value="wisdom">智慧与洞察</option><option value="courage">勇气与行动</option><option value="abundance">丰盛与贡献</option></select></label>
-        <button class="button primary" id="naming-submit" type="submit">生成中文名初选 →</button>
-        <small id="naming-privacy">资料仅在本页计算，不会上传或保存。</small>
-      </form>
-      <div id="naming-result" class="naming-result" hidden>
-        <div class="naming-context"><div><small id="naming-context-label">命名文化坐标</small><h3 id="naming-context-title"></h3><p id="naming-context-copy"></p></div><div class="context-seal" id="context-seal">名</div></div>
-        <div class="name-cards" id="name-cards"></div>
-        <div class="naming-boundary"><strong id="review-title">正式使用前人工复核</strong><p id="review-copy">候选名需要进一步检查普通话和目标方言谐音、性别与年龄语感、常见重名、职业场景及证件登记需要。五行归类在不同流派中可能不同。</p></div>
+      <div class="engine-support" hidden aria-hidden="true">
+        <div data-i18n="demoTitle"></div>
+        <div data-i18n="demoText"></div>
+        <div id="match-label"></div><div id="match-title"></div><div id="match-copy"></div><div id="match-link"></div>
+        <div id="original-lens-label"></div><div id="original-lens-title"></div><div id="original-lens-copy"></div>
+        <div id="chinese-lens-label"></div><div id="chinese-lens-title"></div><div id="chinese-lens-copy"></div>
+        <div id="maya-lens-label"></div><div id="maya-lens-title"></div><div id="maya-lens-copy"></div>
+        <div id="path-label"></div><div id="path-title"></div><div id="path-copy"></div>
+        <div id="step-calc-label"></div><div id="step-calc-title"></div><div id="step-calc-copy"></div>
+        <div id="step-see-label"></div><div id="step-see-title"></div><div id="step-see-copy"></div>
+        <div id="step-ask-label"></div><div id="step-ask-title"></div><div id="step-ask-copy"></div>
+        <div id="step-observe-label"></div><div id="step-observe-title"></div><div id="step-observe-copy"></div>
       </div>
-    </section>
-
-    <section id="faq" class="section shell faq">
-      <p class="eyebrow">FAQ</p><h2 data-i18n="faqTitle">常见问题</h2>
-      <details open><summary data-i18n="q1">外国人如何获得合适的中文名字？</summary><p data-i18n="a1">我们综合原名发音、中文语义、个人特质、职业形象和使用场景，排除不良谐音，并解释每个候选名字的文化含义。</p></details>
-      <details><summary data-i18n="q2">这是科学测评或命运预测吗？</summary><p data-i18n="a2">不是。本服务属于文化探索、个人发展与品牌表达，不构成心理、医疗、法律或投资建议，也不宣称能够预测命运。</p></details>
-      <details><summary data-i18n="q3">可以为企业家或团队服务吗？</summary><p data-i18n="a3">可以。可将中文命名、跨文化沟通和东方战略工作坊组合，用于个人品牌、团队协作或进入中国市场前的文化准备。</p></details>
     </section>
   </main>
 
-  <footer class="shell"><div class="brand"><span class="brand-mark">✦</span><span data-i18n="brand">天赋图鉴 跨文化天赋与东方战略</span></div><p data-i18n="footer">文化是理解自己的另一种语言。</p><small>© 2026 · Cultural exploration, not prediction.</small></footer>
-  <aside id="cart-panel" class="cart-panel" aria-hidden="true"><div class="cart-title"><h2 data-i18n="yourCart">你的购物袋</h2><button id="cart-close">×</button></div><div id="cart-items"></div><p id="cart-empty" data-i18n="cartEmpty">购物袋还是空的。</p><div class="cart-total"><span data-i18n="subtotal">商品小计</span><strong id="cart-total">¥0</strong></div><button class="button primary checkout" data-i18n="inquiry">提交购买意向</button><small data-i18n="prototypeNote">当前为商品原型，不会产生真实订单或付款。</small></aside><div id="cart-shade" class="cart-shade"></div>
-  <script src="app.js"></script>
+  <footer class="shell hook-footer"><span>天赋图鉴 · 九数天赋探索</span><small>结果用于文化探索和自我反思，不构成专业建议或命运预测。</small></footer>
+  <script>let lang='zh'</script>
   <script src="talent-detail.js"></script>
-  <script src="report-export.js"></script>
   <script src="talent-engine.js"></script>
-  <script src="naming.js"></script>
-  <script src="layout.js"></script>
+  <script src="hook-runtime.js"></script>
 </body>
 </html>

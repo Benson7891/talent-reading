@@ -1,0 +1,5 @@
+button{transition:background-color .2s ease,color .2s ease,border-color .2s ease,box-shadow .2s ease,filter .2s ease,transform .2s ease}
+button:not(:disabled):hover{border-color:#f1c97e!important;background-color:#d7ab65!important;color:#071923!important;box-shadow:0 0 0 2px rgba(215,171,101,.2),0 8px 24px rgba(0,0,0,.24);filter:brightness(1.08);transform:translateY(-1px)}
+button:not(:disabled):active{transform:translateY(0);filter:brightness(.96)}
+button:disabled{cursor:not-allowed;opacity:.6}
+@media(hover:none){button:not(:disabled):hover{transform:none;box-shadow:none}}
